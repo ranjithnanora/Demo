@@ -1,4 +1,3 @@
-print("Hello world")
 arr=[3,1,12,0,56,7,0,1,0,1]
 i=0
 n=len(arr)
