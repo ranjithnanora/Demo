@@ -28,3 +28,5 @@ def outer():
 outer()
 
 print("hello world")
+for j in range(10):
+    print(j+j)
