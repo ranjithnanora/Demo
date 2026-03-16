@@ -46,3 +46,4 @@ for i in range(100):
 # for value in mp.values():
 #     print(value)
 
+    print(j+j)
