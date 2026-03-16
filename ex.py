@@ -8,8 +8,6 @@ tuple(m)
 
 print(mp)
 
-
-
 def func(arr=[]):
     arr.append(1)
     return arr
