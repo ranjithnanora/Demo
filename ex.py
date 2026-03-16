@@ -26,3 +26,6 @@ def outer():
     inner()
 
 outer()
+
+for i in range(100):
+    print(i)
