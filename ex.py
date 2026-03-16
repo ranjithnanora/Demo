@@ -27,3 +27,4 @@ def outer():
 
 outer()
 
+print("hello world")
