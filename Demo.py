@@ -13,3 +13,7 @@ for j in range(i, n):
     arr[j]=0
 
 print(arr)
+
+arr=[1,2,3,4,5,6,7,8,9]
+res=list(map(lambda x: x+(x%2==0), arr))
+print(res)

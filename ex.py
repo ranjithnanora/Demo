@@ -26,3 +26,4 @@ def outer():
     inner()
 
 outer()
+
