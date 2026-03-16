@@ -1,24 +1,27 @@
-import heapq
-arr=[5,3,2,1,2,2,1,3,3,5]
-arr.sort()
-print(arr)
-q=[]
+from collections import defaultdict
+arr=[1,1,2,5,3,3,6,12]
 
-i=0
+mp=defaultdict(int)
 for ele in arr:
-    q.append(ele)
-    q.sort()
-    i+=1
-    change=True
-    j = 0
-    while j < len(q) - 1:
-        if q[j] == q[j + 1]:
-            change = True
-            q[j] += q[j + 1]
-            q.pop(j + 1)
-        j += 1
+    mp[ele]+=1
 
-    print(q)
-print(q)
+change=True
+while change:
+    change=False
+    new_mp=defaultdict(int)
+    for key,value in mp.items():
+        if value>1:
+            new_mp[key*value]+=1
+            change=True
+        else:
+            new_mp[key]+=value
+
+    mp=new_mp.copy()
+
+result=[]
+for key in mp.keys():
+    result.append(key)
+
+print(result)
 
 
