@@ -2,3 +2,5 @@
 .idea
 flask2/
 ex.pyu.py
+asyncio/__pycache__/asyncio_main.cpython-312.pyc
+*.pyc
